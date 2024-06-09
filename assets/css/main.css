@@ -3811,7 +3811,7 @@ input, select, textarea {
 		justify-content: flex-end;
 	}
 
-	#message > div:nth-child(1) > h2 {
+	#livreOr > div:nth-child(1) > h2 {
 		writing-mode: vertical-lr;
 		transform: rotate(180deg)
 	}
