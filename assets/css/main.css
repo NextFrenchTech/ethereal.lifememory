@@ -3805,12 +3805,18 @@ input, select, textarea {
 
 
 /* Livre D'Or */
+	blockquote {
+		margin-bottom: 5px;
+	}
 
 	sup {
 		display: flex;
 		justify-content: flex-end;
-		margin-right: 5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+
 	}
+
 
 	#livreOr > div:nth-child(1) > h2 {
 		writing-mode: vertical-lr;
