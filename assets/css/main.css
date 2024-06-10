@@ -3809,6 +3809,7 @@ input, select, textarea {
 	sup {
 		display: flex;
 		justify-content: flex-end;
+		margin-right: 5px;
 	}
 
 	#livreOr > div:nth-child(1) > h2 {
