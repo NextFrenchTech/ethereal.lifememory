@@ -3805,6 +3805,7 @@ input, select, textarea {
 
 
 /* Livre D'Or */
+
 	blockquote {
 		margin-bottom: 10px;
 	}
@@ -3815,7 +3816,6 @@ input, select, textarea {
 		margin-right: 10px;
 		margin-bottom: 10px;
 	}
-
 
 	#livreOr > div:nth-child(1) > h2 {
 		writing-mode: vertical-lr;
