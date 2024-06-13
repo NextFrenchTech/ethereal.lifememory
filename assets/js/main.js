@@ -939,7 +939,7 @@
 	
 			// Liste des vidéos
 			var videos = [
-				
+
 				{ src: 'videos/vid01.mp4' },
 			];
 	
@@ -967,8 +967,8 @@
 //				}
 //			});
 //	
-//			// Charger la première vidéo
-//			loadVideo(currentVideoIndex);
+			// Charger la première vidéo
+			loadVideo(currentVideoIndex);
 		});
 
 
@@ -1007,6 +1007,6 @@
 //				}
 //			});
 //	
-//			// Charger la première vidéo
-//			loadVideo(currentVideoIndex);
+			// Charger la première vidéo
+			loadVideo(currentVideoIndex);
 		});
