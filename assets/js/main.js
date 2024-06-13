@@ -983,7 +983,7 @@
 				{ src: 'videos/vid02.mp4' },
 			];
 	
-//			var currentVideoIndex = 0;
+			var currentVideoIndex = 0;
 	
 			// Fonction pour charger une vidéo
 			function loadVideo(index) {
