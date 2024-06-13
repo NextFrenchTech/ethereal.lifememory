@@ -124,9 +124,6 @@
 										<a href="images/gallery/fulls/06.jpg" class="image filtered span-3" data-position="bottom"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
 									</div>
 									<a href="images/gallery/fulls/07.jpg" class="image filtered span-2-5" data-position="right"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
-									<div class="group span-4-5">
-										<video controls autoplay loop src="videos/vid03.mp4" class="image filtered span-2-5 video" data-position="center"></video>										
-										<video id="videoPlayer" controls autoplay src="videos/vid01.mp4" class="image filtered span-2-5 video" data-position="center"></video></div>										
 								</div>
 							</section>
 
@@ -458,45 +455,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</div>
 
 			</div>
-			<script>
-				document.addEventListener('DOMContentLoaded', function() {
-					var videoPlayer = document.getElementById('videoPlayer');
-			
-					// Liste des vidéos
-					var videos = [
-						{ src: 'videos/vid01.mp4' },
-						{ src: 'videos/vid02.mp4' },
-						{ src: 'videos/vid03.mp4' }
-					];
-			
-					var currentVideoIndex = 0;
-			
-					// Fonction pour charger une vidéo
-					function loadVideo(index) {
-						if (index < videos.length) {
-							videoPlayer.src = videos[index].src;
-							videoPlayer.poster = videos[index].poster;
-							videoPlayer.load();
-							videoPlayer.play();
-						}
-					}
-			
-					// Écouteur d'événement pour la fin de la vidéo
-					videoPlayer.addEventListener('ended', function() {
-						currentVideoIndex++;
-						if (currentVideoIndex < videos.length) {
-							loadVideo(currentVideoIndex);
-						} else {
-							// Réinitialiser à la première vidéo si toutes les vidéos sont jouées
-							currentVideoIndex = 0;
-							loadVideo(currentVideoIndex);
-						}
-					});
-			
-					// Charger la première vidéo
-					loadVideo(currentVideoIndex);
-				});
-			</script>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
