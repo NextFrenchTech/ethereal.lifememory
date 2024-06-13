@@ -931,7 +931,7 @@
 
 /* autoView */
 
-	// autoView /Full|Device
+	// autoView /videoPlayer01
 
 		// Fonction pour passer à la video suivante
 		document.addEventListener('DOMContentLoaded', function() {
@@ -939,10 +939,11 @@
 	
 			// Liste des vidéos
 			var videos = [
+				
 				{ src: 'videos/vid01.mp4' },
 			];
 	
-			var currentVideoIndex = 0;
+//			var currentVideoIndex = 0;
 	
 			// Fonction pour charger une vidéo
 			function loadVideo(index) {
@@ -954,18 +955,58 @@
 				}
 			}
 	
-			// Écouteur d'événement pour la fin de la vidéo
-			videoPlayer.addEventListener('ended', function() {
-				currentVideoIndex++;
-				if (currentVideoIndex < videos.length) {
-					loadVideo(currentVideoIndex);
-				} else {
-					// Réinitialiser à la première vidéo si toutes les vidéos sont jouées
-					currentVideoIndex = 0;
-					loadVideo(currentVideoIndex);
-				}
-			});
+//			// Écouteur d'événement pour la fin de la vidéo
+//			videoPlayer.addEventListener('ended', function() {
+//				currentVideoIndex++;
+//				if (currentVideoIndex < videos.length) {
+//					loadVideo(currentVideoIndex);
+//				} else {
+//					// Réinitialiser à la première vidéo si toutes les vidéos sont jouées
+//					currentVideoIndex = 0;
+//					loadVideo(currentVideoIndex);
+//				}
+//			});
+//	
+//			// Charger la première vidéo
+//			loadVideo(currentVideoIndex);
+		});
+
+
+	// autoView /videoPlayer02
+
+		// Fonction pour passer à la video suivante
+		document.addEventListener('DOMContentLoaded', function() {
+			var videoPlayer = document.getElementById('videoPlayer02');
 	
-			// Charger la première vidéo
-			loadVideo(currentVideoIndex);
+			// Liste des vidéos
+			var videos = [
+				{ src: 'videos/vid02.mp4' },
+			];
+	
+//			var currentVideoIndex = 0;
+	
+			// Fonction pour charger une vidéo
+			function loadVideo(index) {
+				if (index < videos.length) {
+					videoPlayer.src = videos[index].src;
+					videoPlayer.poster = videos[index].poster;
+					videoPlayer.load();
+					videoPlayer.play();
+				}
+			}
+	
+//			// Écouteur d'événement pour la fin de la vidéo
+//			videoPlayer.addEventListener('ended', function() {
+//				currentVideoIndex++;
+//				if (currentVideoIndex < videos.length) {
+//					loadVideo(currentVideoIndex);
+//				} else {
+//					// Réinitialiser à la première vidéo si toutes les vidéos sont jouées
+//					currentVideoIndex = 0;
+//					loadVideo(currentVideoIndex);
+//				}
+//			});
+//	
+//			// Charger la première vidéo
+//			loadVideo(currentVideoIndex);
 		});
