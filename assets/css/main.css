@@ -3796,9 +3796,7 @@ input, select, textarea {
 
 /* Video */
 
-	.group.span-3, .group.span-4-5 {
-		display: flex;
-		justify-content: center;
+	video {
 		background-color: black;
 	}
 

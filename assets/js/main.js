@@ -926,3 +926,87 @@
 		//window.onload = function() {
 		//	setTimeout(startAutoScroll, 0); // Délai de 0 secondes avant de démarrer le défilement automatique
 		//};
+
+
+
+/* autoView */
+
+	// autoView /videoPlayer01
+
+		// Fonction pour passer à la video suivante
+		document.addEventListener('DOMContentLoaded', function() {
+			var videoPlayer01 = document.getElementById('videoPlayer01');
+
+			// Liste des vidéos
+			var videos = [
+				{ src: 'videos/vid01.mp4' },
+				//{ src: 'videos/.mp4', poster: 'images/.jpg' },
+			];
+
+			var currentVideoIndex = 0;
+
+			// Fonction pour charger une vidéo
+			function loadVideo(index) {
+				//if (index < videos.length) {
+					videoPlayer01.src = videos[index].src;
+					//videoPlayer01.poster = videos[index].poster;
+					videoPlayer01.load();
+					videoPlayer01.play();
+				//}
+			}
+
+			//// Écouteur d'événement pour la fin de la vidéo
+			//videoPlayer01.addEventListener('ended', function() {
+			//	currentVideoIndex++;
+			//	if (currentVideoIndex < videos.length) {
+			//		loadVideo(currentVideoIndex);
+			//	} else {
+			//		// Réinitialiser à la première vidéo si toutes les vidéos sont jouées
+			//		currentVideoIndex = 0;
+			//		loadVideo(currentVideoIndex);
+			//	}
+			//});
+
+			// Charger la première vidéo
+			loadVideo(currentVideoIndex);
+		});
+
+	// autoView /videoPlayer02
+
+		// Fonction pour passer à la video suivante
+		document.addEventListener('DOMContentLoaded', function() {
+			var videoPlayer02 = document.getElementById('videoPlayer02');
+
+			// Liste des vidéos
+			var videos = [
+				{ src: 'videos/vid02.mp4' },
+				//{ src: 'videos/.mp4', poster: 'images/.jpg' },
+			];
+
+			var currentVideoIndex = 0;
+
+			// Fonction pour charger une vidéo
+			function loadVideo(index) {
+				//if (index < videos.length) {
+					videoPlayer02.src = videos[index].src;
+					//videoPlayer02.poster = videos[index].poster;
+					videoPlayer02.load();
+					videoPlayer02.play();
+				//}
+			}
+
+			//// Écouteur d'événement pour la fin de la vidéo
+			//videoPlayer02.addEventListener('ended', function() {
+			//	currentVideoIndex++;
+			//	if (currentVideoIndex < videos.length) {
+			//		loadVideo(currentVideoIndex);
+			//	} else {
+			//		// Réinitialiser à la première vidéo si toutes les vidéos sont jouées
+			//		currentVideoIndex = 0;
+			//		loadVideo(currentVideoIndex);
+			//	}
+			//});
+
+			// Charger la première vidéo
+			loadVideo(currentVideoIndex);
+		});
