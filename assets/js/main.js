@@ -980,6 +980,7 @@
 			// Liste des vidéos
 			var videos = [
 				{ src: 'videos/vid02.mp4' },
+				{ src: 'videos/vid03.mp4' },
 				//{ src: 'videos/.mp4', poster: 'images/.jpg' },
 			];
 
@@ -987,25 +988,25 @@
 
 			// Fonction pour charger une vidéo
 			function loadVideo(index) {
-				//if (index < videos.length) {
+				if (index < videos.length) {
 					videoPlayer02.src = videos[index].src;
 					//videoPlayer02.poster = videos[index].poster;
 					videoPlayer02.load();
 					videoPlayer02.play();
-				//}
+				}
 			}
 
-			//// Écouteur d'événement pour la fin de la vidéo
-			//videoPlayer02.addEventListener('ended', function() {
-			//	currentVideoIndex++;
-			//	if (currentVideoIndex < videos.length) {
-			//		loadVideo(currentVideoIndex);
-			//	} else {
-			//		// Réinitialiser à la première vidéo si toutes les vidéos sont jouées
-			//		currentVideoIndex = 0;
-			//		loadVideo(currentVideoIndex);
-			//	}
-			//});
+			// Écouteur d'événement pour la fin de la vidéo
+			videoPlayer02.addEventListener('ended', function() {
+				currentVideoIndex++;
+				if (currentVideoIndex < videos.length) {
+					loadVideo(currentVideoIndex);
+				} else {
+					// Réinitialiser à la première vidéo si toutes les vidéos sont jouées
+					currentVideoIndex = 0;
+					loadVideo(currentVideoIndex);
+				}
+			});
 
 			// Charger la première vidéo
 			loadVideo(currentVideoIndex);
