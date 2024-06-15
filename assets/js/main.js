@@ -894,9 +894,8 @@
 /* autoScroll */
 
 	// autoScroll /Mobi|Android/i
-
+	
         // L769. Fonction pour détecter si l'utilisateur est sur un appareil mobile
-
 
         // Constantes pour les valeurs configurables
         const SCROLL_STEP = 1; // Nombre de pixels à faire défiler par intervalle
